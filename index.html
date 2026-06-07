@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chirag Mahayavanshi | Finance & Automation Portfolio</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -12,133 +12,139 @@
     header p { font-size: 1rem; color: #a0b4d0; margin-top: 10px; }
     header .tags { margin-top: 16px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
     header .tags span { background: #2e4a7a; color: #90caf9; padding: 4px 14px; border-radius: 20px; font-size: 0.82rem; }
-    .contact-bar { background: #161b27; text-align: center; padding: 14px; font-size: 0.88rem; color: #7a9cc0; border-bottom: 1px solid #1e2d45; }
+    .contact-bar { background: #161b27; text-align: center; padding: 14px; font-size: 0.88rem; color: #7a9cc0; border-bottom: 1px solid #2e4a7a; }
     .contact-bar a { color: #90caf9; text-decoration: none; margin: 0 12px; }
     .section { max-width: 900px; margin: 50px auto; padding: 0 24px; }
-    .section h2 { font-size: 1.4rem; color: #90caf9; border-left: 4px solid #1F3864; padding-left: 14px; margin-bottom: 28px; text-transform: uppercase; letter-spacing: 1px; }
-    .project-card { background: #161b27; border: 1px solid #1e2d45; border-radius: 12px; padding: 32px; margin-bottom: 30px; transition: border-color 0.3s; }
+    h2 { font-size: 1.4rem; color: #90caf9; border-left: 4px solid #1F3864; padding-left: 14px; margin-bottom: 28px; text-transform: uppercase; letter-spacing: 1px; }
+    .project-card { background: #161b27; border: 1px solid #1e2d45; border-radius: 12px; padding: 32px; margin-bottom: 30px; transition: border-color 0.2s; }
     .project-card:hover { border-color: #2e4a7a; }
     .project-card h3 { font-size: 1.3rem; color: #ffffff; margin-bottom: 6px; }
     .project-card .subtitle { font-size: 0.85rem; color: #5c7a9f; margin-bottom: 18px; }
-    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
-    .badge { background: #1a2540; color: #90caf9; border: 1px solid #2e4a7a; padding: 3px 12px; border-radius: 20px; font-size: 0.78rem; }
     .block { margin-bottom: 18px; }
-    .block h4 { font-size: 0.88rem; color: #90caf9; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
-    .block p, .block ul { font-size: 0.93rem; color: #b0bec5; }
+    .block h4 { font-size: 0.9rem; color: #90caf9; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .block p, .block ul { font-size: 0.92rem; color: #8a9ab0; }
     .block ul { padding-left: 18px; }
-    .block ul li { margin-bottom: 6px; }
-    .impact-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px; }
-    .impact-box { background: #1a2540; border: 1px solid #2e4a7a; border-radius: 10px; padding: 14px 22px; text-align: center; flex: 1; min-width: 140px; }
-    .impact-box .number { font-size: 1.5rem; font-weight: 700; color: #90caf9; }
-    .impact-box .label { font-size: 0.78rem; color: #5c7a9f; margin-top: 4px; }
-    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
-    .skill-card { background: #161b27; border: 1px solid #1e2d45; border-radius: 10px; padding: 18px; }
-    .skill-card h4 { font-size: 0.85rem; color: #90caf9; margin-bottom: 10px; text-transform: uppercase; }
-    .skill-card p { font-size: 0.85rem; color: #7a9cc0; }
-    footer { text-align: center; padding: 40px; color: #3a5270; font-size: 0.82rem; border-top: 1px solid #1e2d45; margin-top: 60px; }
+    .block ul li { margin-bottom: 5px; }
+    .tags-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .tag { background: #1e2d45; color: #90caf9; padding: 3px 10px; border-radius: 12px; font-size: 0.78rem; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 8px; }
+    .metric { background: #1a2233; border: 1px solid #1e2d45; border-radius: 8px; padding: 14px; text-align: center; }
+    .metric .num { font-size: 1.6rem; font-weight: 700; color: #90caf9; }
+    .metric .lbl { font-size: 0.75rem; color: #5c7a9f; margin-top: 4px; }
+    .btn-row { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 10px 22px; border-radius: 6px; font-size: 0.88rem; font-weight: 600; text-decoration: none; transition: background 0.2s; }
+    .btn-primary { background: #1F3864; color: #fff; border: 1px solid #2e4a7a; }
+    .btn-primary:hover { background: #2e4a7a; }
+    .btn-secondary { background: transparent; color: #90caf9; border: 1px solid #2e4a7a; }
+    .btn-secondary:hover { background: #1a2233; }
+    footer { text-align: center; padding: 40px; color: #5c7a9f; border-top: 1px solid #1e2d45; margin-top: 60px; font-size: 0.88rem; }
   </style>
 </head>
 <body>
-<header>
-  <h1>Chirag Mahayavanshi</h1>
-  <p>Senior Finance & Automation Specialist | NBFC | AI-Powered Finance Tools</p>
-  <div class="tags">
-    <span>ACCA (9/13 Papers)</span>
-    <span>Masters - O.P. Jindal Global University (2026)</span>
-    <span>5 Years NBFC Experience</span>
-    <span>Python | OCR | LLM | GST/TDS</span>
+  <header>
+    <h1>Chirag Mahayavanshi</h1>
+    <p>Senior Finance &amp; Automation Specialist | ACCA (9/13) | Masters in International Accounting &amp; Finance</p>
+    <div class="tags">
+      <span>Finance Automation</span>
+      <span>AI &amp; OCR</span>
+      <span>Python</span>
+      <span>Streamlit</span>
+      <span>Google Sheets API</span>
+      <span>Accounts Payable</span>
+    </div>
+  </header>
+  <div class="contact-bar">
+    Mumbai, India &nbsp;|&nbsp;
+    <a href="mailto:chirag@example.com">chirag@example.com</a> &nbsp;|&nbsp;
+    <a href="https://linkedin.com/in/chirag-mahayavanshi" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+    <a href="https://github.com/MAHAYAVANSHI2904" target="_blank">GitHub</a>
   </div>
-</header>
-<div class="contact-bar">
-  <a href="mailto:mahayavanshic@gmail.com">mahayavanshic@gmail.com</a>
-  <a href="https://linkedin.com/in/chirag-mahayavanshi" target="_blank">LinkedIn</a>
-  <span>Mumbai, India | Open to Relocate</span>
-</div>
-<div class="section">
-  <h2>Finance Automation Projects</h2>
-  <div class="project-card">
-    <h3>AP Pulse</h3>
-    <p class="subtitle">AI-Powered Accounts Payable & Invoice Compliance Automation Engine</p>
-    <div class="badge-row">
-      <span class="badge">Python</span>
-      <span class="badge">OCR (PyMuPDF + Tesseract)</span>
-      <span class="badge">LLM (Groq | Gemini Flash | Claude)</span>
-      <span class="badge">Google Sheets API</span>
-      <span class="badge">SQL | SQLite</span>
-      <span class="badge">Streamlit</span>
-      <span class="badge">Vercel</span>
+
+  <div class="section">
+    <h2>Featured Projects</h2>
+
+    <div class="project-card">
+      <h3>AP Pulse &mdash; Accounts Payable Intelligence Dashboard</h3>
+      <div class="subtitle">Python &bull; Streamlit &bull; Groq AI &bull; Tesseract OCR &bull; Google Sheets API</div>
+
+      <div class="block">
+        <h4>Problem</h4>
+        <p>Manual AP reconciliation consumed 20+ hours/week. No unified dashboard, no automated 3-way matching, and zero AI-assisted discrepancy detection.</p>
+      </div>
+      <div class="block">
+        <h4>Solution</h4>
+        <p>Built a Streamlit-based AP dashboard that automates invoice parsing, PO matching, compliance checks, and syncs clean records to Google Sheets in real time.</p>
+      </div>
+      <div class="block">
+        <h4>Impact</h4>
+        <div class="metrics">
+          <div class="metric"><div class="num">85%</div><div class="lbl">Faster AP cycle</div></div>
+          <div class="metric"><div class="num">100%</div><div class="lbl">Audit trail in Sheets</div></div>
+          <div class="metric"><div class="num">3-Way</div><div class="lbl">PO + GRN matching</div></div>
+          <div class="metric"><div class="num">0</div><div class="lbl">Secrets committed</div></div>
+        </div>
+      </div>
+      <div class="block">
+        <h4>Tech Stack</h4>
+        <div class="tags-row">
+          <span class="tag">Python</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Groq AI</span>
+          <span class="tag">Tesseract OCR</span>
+          <span class="tag">PyMuPDF</span>
+          <span class="tag">Google Sheets API</span>
+          <span class="tag">gspread</span>
+        </div>
+      </div>
+      <div class="btn-row">
+        <a href="https://mahayavanshi2904.github.io/AP-Pulse/" class="btn btn-primary" target="_blank">View Live Portfolio Page</a>
+        <a href="https://github.com/MAHAYAVANSHI2904/AP-Pulse" class="btn btn-secondary" target="_blank">GitHub Repo</a>
+      </div>
     </div>
-    <div class="block">
-      <h4>Problem</h4>
-      <p>Finance teams in NBFCs and CA firms were losing 2+ hours daily to manual invoice entry, error-prone GST/TDS calculations, and fragmented ledger updates.</p>
-    </div>
-    <div class="block">
-      <h4>Solution</h4>
-      <ul>
-        <li>End-to-end OCR + LLM pipeline to parse complex PDF and image invoices with AI self-correction fallback</li>
-        <li>Compliance engine validating GSTIN, PAN, MSME/Udyam details and auto-calculating TDS</li>
-        <li>Google Sheets API integration pushing verified vendor data and journal entries directly into financial records</li>
-        <li>Multi-user SQLite architecture with isolated login and role-based access control</li>
-        <li>GSTR-2B auto-reconciliation and Tally XML export built-in</li>
-      </ul>
-    </div>
-    <div class="block">
-      <h4>Impact</h4>
-      <div class="impact-row">
-        <div class="impact-box"><div class="number">80%</div><div class="label">Faster Processing</div></div>
-        <div class="impact-box"><div class="number">2hrs to 10min</div><div class="label">Per Invoice Cycle</div></div>
-        <div class="impact-box"><div class="number">Zero</div><div class="label">GST/TDS Errors</div></div>
-        <div class="impact-box"><div class="number">Zero</div><div class="label">Duplicate Entries</div></div>
+
+    <div class="project-card">
+      <h3>Nexus-Fin &mdash; AI Accounts Payable Automation</h3>
+      <div class="subtitle">Python &bull; Streamlit &bull; Groq AI (LLaMA 3) &bull; Tesseract OCR &bull; Google Sheets API</div>
+
+      <div class="block">
+        <h4>Problem</h4>
+        <p>Invoice processing in mid-size companies takes 15&ndash;30 minutes per invoice, is error-prone, and lacks proper audit trails. Finance teams lose hundreds of hours monthly on repetitive data entry and reconciliation.</p>
+      </div>
+      <div class="block">
+        <h4>Solution</h4>
+        <p>Nexus-Fin automates end-to-end AP: upload a PDF invoice, AI extracts structured data, performs 3-way PO matching, flags discrepancies, and pushes records to Google Sheets automatically.</p>
+      </div>
+      <div class="block">
+        <h4>Impact</h4>
+        <div class="metrics">
+          <div class="metric"><div class="num">90%</div><div class="lbl">Less manual entry</div></div>
+          <div class="metric"><div class="num">&lt;30s</div><div class="lbl">Per invoice</div></div>
+          <div class="metric"><div class="num">100%</div><div class="lbl">Audit trail</div></div>
+          <div class="metric"><div class="num">0</div><div class="lbl">Secrets committed</div></div>
+        </div>
+      </div>
+      <div class="block">
+        <h4>Tech Stack</h4>
+        <div class="tags-row">
+          <span class="tag">Python 3.11</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Groq API (LLaMA 3)</span>
+          <span class="tag">Tesseract OCR</span>
+          <span class="tag">PyMuPDF</span>
+          <span class="tag">Google Sheets API v4</span>
+          <span class="tag">pandas</span>
+        </div>
+      </div>
+      <div class="btn-row">
+        <a href="https://mahayavanshi2904.github.io/Nexus-Fin/" class="btn btn-primary" target="_blank">View Live Portfolio Page</a>
+        <a href="https://github.com/MAHAYAVANSHI2904/Nexus-Fin" class="btn btn-secondary" target="_blank">GitHub Repo</a>
       </div>
     </div>
   </div>
-  <div class="project-card">
-    <h3>Nexus Fin</h3>
-    <p class="subtitle">Personal Finance Management OS - Relational Database Architecture</p>
-    <div class="badge-row">
-      <span class="badge">Python</span>
-      <span class="badge">Claude API</span>
-      <span class="badge">Gemini Flash</span>
-      <span class="badge">Google Sheets</span>
-      <span class="badge">Vercel</span>
-      <span class="badge">Relational DB</span>
-    </div>
-    <div class="block">
-      <h4>Problem</h4>
-      <p>Existing budgeting apps suffered from poor UX, cluttered design, and weak long-term financial planning - identified through systematic research and user feedback analysis.</p>
-    </div>
-    <div class="block">
-      <h4>Solution</h4>
-      <ul>
-        <li>Relational-database personal finance OS tracking income, expenses, liabilities, and investments</li>
-        <li>Clean dark-mode interface with multi-step onboarding and real-time liquidity tracking</li>
-        <li>Target vs actual budget views with allocation efficiency scoring</li>
-        <li>10-year wealth projection engine powered by actual transaction data</li>
-        <li>AI module delivering personalised budget recommendations based on real spending patterns</li>
-      </ul>
-    </div>
-    <div class="block">
-      <h4>Key Features</h4>
-      <div class="impact-row">
-        <div class="impact-box"><div class="number">10-Year</div><div class="label">Wealth Projection</div></div>
-        <div class="impact-box"><div class="number">Real-Time</div><div class="label">Liquidity Tracking</div></div>
-        <div class="impact-box"><div class="number">AI-Driven</div><div class="label">Budget Recommendations</div></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section">
-  <h2>Core Skills & Tools</h2>
-  <div class="skills-grid">
-    <div class="skill-card"><h4>Finance & Compliance</h4><p>Treasury Management | Accounts Payable | GST/TDS | MIS/FP&A | Cash Flow | Audit | Ind AS 115</p></div>
-    <div class="skill-card"><h4>Automation & Dev</h4><p>Python | Pandas | SQL | OCR | Google Sheets API | Streamlit | Vercel | Git/GitHub | Zapier | Make</p></div>
-    <div class="skill-card"><h4>AI & LLM Tools</h4><p>Groq AI | Claude API | Gemini Flash | Google AI Studio | OpenRouter | Hugging Face | ChatGPT</p></div>
-    <div class="skill-card"><h4>ERP & Platforms</h4><p>Tally Prime | Zoho Books | ADDA ERP | Razorpay | Cashfree | Paytm | PhonePe | HDFC PayZapp</p></div>
-  </div>
-</div>
-<footer>
-  <p>Chirag Mahayavanshi | Mumbai, India | mahayavanshic@gmail.com</p>
-  <p style="margin-top:8px;">This portfolio showcases personal finance automation projects built independently.</p>
-</footer>
+
+  <footer>
+    <p>Chirag Mahayavanshi &mdash; Mumbai, India | Senior Finance &amp; Automation Specialist</p>
+    <p style="margin-top:8px">ACCA (9/13) | Masters in International Accounting &amp; Finance | <a href="https://github.com/MAHAYAVANSHI2904" style="color:#90caf9">GitHub</a></p>
+  </footer>
 </body>
 </html>
